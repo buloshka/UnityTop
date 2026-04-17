@@ -3883,6 +3883,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 513766283}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84f162601ac968a42aa89d297789f0f8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 513766286}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84f162601ac968a42aa89d297789f0f8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 513766287}
   m_SourcePrefab: {fileID: 100100000, guid: 84f162601ac968a42aa89d297789f0f8, type: 3}
 --- !u!1 &513766282 stripped
 GameObject:
@@ -3946,6 +3954,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 513766281}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &513766286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513766282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: c39e180dda4c101468aaa728c7ed8095,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &513766287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513766282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299229795ded22d40907810901a4b9bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  cameraTransform: {fileID: 330585546}
 --- !u!1001 &534835888
 PrefabInstance:
   m_ObjectHideFlags: 0
