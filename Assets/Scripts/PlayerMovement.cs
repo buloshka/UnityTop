@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] public float jumpForce = 5f; // NEW
+    [SerializeField] private float jumpForce = 5f; // NEW
     [SerializeField] private Transform cameraTransform;
     
     private Rigidbody _rb;
@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
         _moveInput = value.Get<Vector2>();
     }
 
-    // NEW
     public void OnJump(InputValue value)
     {
         if (value.isPressed == false || _isGrounded == false)
@@ -32,8 +31,7 @@ public class PlayerMovement : MonoBehaviour
         _rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 
-    // NEW
-    void OnCollisionStay(Collision collision) => _isGrounded = true;
+    void OnCollisionEnter(Collision collision) => _isGrounded = true;
     void OnCollisionExit(Collision collision) => _isGrounded = false;
 
     private void FixedUpdate()
