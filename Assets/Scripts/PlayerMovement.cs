@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         if (value.isPressed == false || _isGrounded == false)
             return;
         
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        _rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 
     // NEW
